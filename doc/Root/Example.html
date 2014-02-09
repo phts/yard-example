@@ -64,7 +64,7 @@
     <iframe id="search_frame"></iframe>
 
     <div id="content"><h1>Class: Root::Example
-  <span class="abstract note title">Abstract</span>
+  
   
   
 </h1>
@@ -73,12 +73,12 @@
   
     <dt class="r1">Inherits:</dt>
     <dd class="r1">
-      <span class="inheritName">BaseExample</span>
+      <span class="inheritName"><span class='object_link'><a href="BaseExample.html" title="Root::BaseExample (class)">BaseExample</a></span></span>
       
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next">BaseExample</li>
+            <li class="next"><span class='object_link'><a href="BaseExample.html" title="Root::BaseExample (class)">BaseExample</a></span></li>
           
             <li class="next">Root::Example</li>
           
@@ -111,14 +111,12 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <div class="note abstract">
-  <strong>This class is abstract.</strong>
-  <div class='inline'>
-<p>Contains basic methods.</p>
-</div>
-</div>
-
+    
 <p>An example class to show what YARD may do.</p>
+
+<h2 id="label-Execute">Execute</h2>
+
+<p>To execute something use <span class='object_link'><a href="BaseExample.html#execute-instance_method" title="Root::BaseExample#execute (method)">BaseExample#execute</a></span>.</p>
 
 
   </div>
@@ -218,7 +216,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Sets and returns example&#39;s name.</p>
+<p>Current example&#39;s name.</p>
 </div></span>
   
 </li>
@@ -227,7 +225,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#type-instance_method" title="#type (instance method)">- (Number) <strong>type</strong> </a>
+      <a href="#type-instance_method" title="#type (instance method)">- (Symbol) <strong>type</strong> </a>
     
 
     
@@ -289,11 +287,92 @@
 
   
     <h2>
+      Dinamic Methods
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#error%3F-instance_method" title="#error? (instance method)">- (true, false) <strong>error?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tests whether the example has <code>:error</code> type.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ok%3F-instance_method" title="#ok? (instance method)">- (true, false) <strong>ok?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tests whether the example has <code>:ok</code> type.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
       Class Method Summary
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
 
     <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#after_create-class_method" title="after_create (class method)">+ (void) <strong>after_create</strong> {|example| ... }</a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a callback that is called after an example is successfully created.</p>
+</div></span>
+  
+</li>
+
       
         <li class="public ">
   <span class="summary_signature">
@@ -331,7 +410,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#destroy-instance_method" title="#destroy (instance method)">- (Object) <strong>destroy</strong>(example) </a>
+      <a href="#destroy-instance_method" title="#destroy (instance method)">- (void) <strong>destroy</strong>(example) </a>
     
 
     
@@ -355,7 +434,7 @@
         <li class="protected ">
   <span class="summary_signature">
     
-      <a href="#do_action-instance_method" title="#do_action (instance method)">- (Object) <strong>do_action</strong> </a>
+      <a href="#do_action-instance_method" title="#do_action (instance method)">- (Object) <strong>do_action</strong> </a> <span class="extras">(protected)</span>
     
 
     
@@ -364,13 +443,13 @@
   
   
   <span class="note title protected">protected</span>
-  <span class="abstract note title">abstract</span>
+  
   
   
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Executes a main action described by descendants.</p>
+<p>Executes a main action of <span class='object_link'><a href="" title="Root::Example (class)">Example</a></span>.</p>
 </div></span>
   
 </li>
@@ -379,7 +458,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#equal%3F-instance_method" title="#equal? (instance method)">- (true, false) <strong>equal?</strong>(io) </a>
+      <a href="#equal%3F-instance_method" title="#equal? (instance method)">- (true, false) <strong>equal?</strong>(io = STDIN) </a>
     
 
     
@@ -403,55 +482,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#error%3F-instance_method" title="#error? (instance method)">- (true, false) <strong>error?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Tests whether the example has <code>:error</code> type.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#execute-instance_method" title="#execute (instance method)">- (Object) <strong>execute</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Executes a main action.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Example) <strong>initialize</strong> </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Example) <strong>initialize</strong>(opts = {}) </a>
     
 
     
@@ -477,30 +508,6 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#ok%3F-instance_method" title="#ok? (instance method)">- (true, false) <strong>ok?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Tests whether the example has <code>:ok</code> type.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#to_s-instance_method" title="#to_s (instance method)">- (String) <strong>to_s</strong> </a>
     
 
@@ -515,9 +522,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>A string representation of the example.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -528,13 +533,23 @@
 
   
   
-  <div id="constructor_details" class="method_details_list">
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="BaseExample.html" title="Root::BaseExample (class)">BaseExample</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="BaseExample.html#execute-instance_method" title="Root::BaseExample#execute (method)">#execute</a></span></p>
+<div id="constructor_details" class="method_details_list">
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    - (<tt><span class='object_link'><a href="" title="Root::Example (class)">Example</a></span></tt>) <strong>initialize</strong> 
+    - (<tt><span class='object_link'><a href="" title="Root::Example (class)">Example</a></span></tt>) <strong>initialize</strong>(opts = {}) 
   
 
   
@@ -549,7 +564,67 @@
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>opts</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>options of a new example</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:type</span>
+          <span class="type">(<tt>Symbol</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>:ok</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>type of example</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>example&#39;s name</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
 
 </div><table class="source_code">
   <tr>
@@ -557,13 +632,13 @@
       <pre class="lines">
 
 
-94
-95</pre>
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 152</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -589,7 +664,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Sets and returns example&#39;s name.</p>
+<p>Returns current example&#39;s name</p>
 
 
   </div>
@@ -608,7 +683,7 @@
       
         &mdash;
         <div class='inline'>
-<p>current example&#39;s name.</p>
+<p>current example&#39;s name</p>
 </div>
       
     </li>
@@ -621,12 +696,12 @@
       <pre class="lines">
 
 
-51
-52
-53</pre>
+82
+83
+84</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 82</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
   <span class='ivar'>@name</span>
@@ -641,7 +716,7 @@
       <div class="method_details ">
   <h3 class="signature " id="type-instance_method">
   
-    - (<tt>Number</tt>) <strong>type</strong>  <span class="extras">(readonly)</span>
+    - (<tt>Symbol</tt>) <strong>type</strong>  <span class="extras">(readonly)</span>
   
 
   
@@ -650,7 +725,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns example&#39;s type.</p>
+<p>Returns example&#39;s type</p>
 
 
   </div>
@@ -663,13 +738,13 @@
     <li>
       
       
-        <span class='type'>(<tt>Number</tt>)</span>
+        <span class='type'>(<tt>Symbol</tt>)</span>
       
       
       
         &mdash;
         <div class='inline'>
-<p>example&#39;s type.</p>
+<p>example&#39;s type</p>
 </div>
       
     </li>
@@ -682,12 +757,12 @@
       <pre class="lines">
 
 
-56
-57
-58</pre>
+87
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -731,7 +806,7 @@
       
         &mdash;
         <div class='inline'>
-<p>example&#39;s user.</p>
+<p>example&#39;s user</p>
 </div>
       
     </li>
@@ -745,12 +820,12 @@
       <pre class="lines">
 
 
-63
-64
-65</pre>
+94
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_user='>user=</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
   <span class='ivar'>@user</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
@@ -768,7 +843,116 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="parse-class_method">
+  <h3 class="signature first" id="after_create-class_method">
+  
+    + (<tt>void</tt>) <strong>after_create</strong> {|example| ... }
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Creates a callback that is called after an example is successfully created.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>example</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a block to be called after a docstring is parsed</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Yield Parameters:</p>
+<ul class="yieldparam">
+  
+    <li>
+      
+        <span class='name'>example</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Root::Example (class)">Example</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a new created <span class='object_link'><a href="" title="Root::Example (class)">Root::Example</a></span> instance</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Yield Returns:</p>
+<ul class="yieldreturn">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>void</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>to apply changes made in this block</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>to cancel all changes made in this block</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'example.rb', line 126</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_after_create'>after_create</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse-class_method">
   
     + (<tt><span class='object_link'><a href="" title="Root::Example (class)">Example</a></span></tt><sup>?</sup>) <strong>parse</strong>(str) 
   
@@ -785,7 +969,22 @@
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='const'>Example</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>MyExample</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># =&gt; new Example instance</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Parse <code>nil</code></p>
+</div></p>
+      
+      <pre class="example code"><code><span class='const'>Example</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='kw'>nil</span><span class='rparen'>)</span> <span class='comment'># =&gt; nil</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -820,7 +1019,7 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>if parsed successfully.</p>
+<p>if parsed successfully</p>
 </div>
       
     </li>
@@ -834,7 +1033,7 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>if not parsed.</p>
+<p>if not parsed</p>
 </div>
       
     </li>
@@ -847,11 +1046,11 @@ returned.</p>
       <pre class="lines">
 
 
-75
-76</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_str'>str</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -869,7 +1068,7 @@ returned.</p>
       <div class="method_details first">
   <h3 class="signature first" id="destroy-instance_method">
   
-    - (<tt>Object</tt>) <strong>destroy</strong>(example) 
+    - (<tt>void</tt>) <strong>destroy</strong>(example) 
   
 
   
@@ -877,7 +1076,7 @@ returned.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    
+    <p class="note returns_void">This method returns an undefined value.</p>
 <p>Destroys this instance. <strong>Warning</strong>: the instance will be
 <em>completely</em> destroyed.</p>
 
@@ -898,7 +1097,7 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>if the example cannot be destroyed.</p>
+<p>if the example cannot be destroyed</p>
 </div>
       
     </li>
@@ -911,11 +1110,11 @@ returned.</p>
       <pre class="lines">
 
 
-102
-103</pre>
+161
+162</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 161</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span><span class='lparen'>(</span><span class='id identifier rubyid_example'>example</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -935,14 +1134,16 @@ returned.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <div class="note abstract">
-  <strong>This method is abstract.</strong>
-  <div class='inline'>
-<p>Should be overridden.</p>
-</div>
-</div>
+    
 
-<p>Executes a main action described by descendants. Executed from <span class='object_link'><a href="#execute-instance_method" title="Root::Example#execute (method)">#execute</a></span>.</p>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="docstring">
+  <div class="discussion">
+    
+<p>Executes a main action of <span class='object_link'><a href="" title="Root::Example (class)">Root::Example</a></span>.</p>
 
 
   </div>
@@ -950,17 +1151,20 @@ returned.</p>
 <div class="tags">
   
 
+</div>
+
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-138
-139</pre>
+190
+191</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 138</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 190</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_do_action'>do_action</span>
 <span class='kw'>end</span></pre>
@@ -972,7 +1176,7 @@ returned.</p>
       <div class="method_details ">
   <h3 class="signature " id="equal?-instance_method">
   
-    - (<tt>true</tt>, <tt>false</tt>) <strong>equal?</strong>(io) 
+    - (<tt>true</tt>, <tt>false</tt>) <strong>equal?</strong>(io = STDIN) 
   
 
   
@@ -998,10 +1202,12 @@ returned.</p>
         <span class='type'>(<tt>#read</tt>)</span>
       
       
+        <em class="default">(defaults to: <tt>STDIN</tt>)</em>
+      
       
         &mdash;
         <div class='inline'>
-<p>whatever which responds to #read (e.g. IO).</p>
+<p>whatever which responds to #read (e.g. IO)</p>
 </div>
       
     </li>
@@ -1020,7 +1226,7 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>if data generated successfully.</p>
+<p>if data generated successfully</p>
 </div>
       
     </li>
@@ -1034,7 +1240,7 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>if data failed to generate.</p>
+<p>if data failed to generate</p>
 </div>
       
     </li>
@@ -1047,13 +1253,13 @@ returned.</p>
       <pre class="lines">
 
 
-113
-114</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 172</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_equal?'>equal?</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_equal?'>equal?</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span> <span class='op'>=</span> <span class='const'>STDIN</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1099,56 +1305,17 @@ returned.</p>
       <pre class="lines">
 
 
-86
-87
-88
-89</pre>
+138
+139
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 138</span>
 
 <span class='const'>TYPES</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_t'>t</span><span class='op'>|</span>
   <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_t'>t</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
   <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="execute-instance_method">
-  
-    - (<tt>Object</tt>) <strong>execute</strong> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Executes a main action.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-127
-128</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 127</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_execute'>execute</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1194,12 +1361,18 @@ returned.</p>
       <pre class="lines">
 
 
-</pre>
+138
+139
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 138</span>
 
-</pre>
+<span class='const'>TYPES</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_t'>t</span><span class='op'>|</span>
+  <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_t'>t</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -1217,7 +1390,15 @@ returned.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns a string representation of the example.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a string representation of the example</p>
 
 
   </div>
@@ -1236,12 +1417,15 @@ returned.</p>
       
         &mdash;
         <div class='inline'>
-<p>a string representation of the example.</p>
+<p>a string representation of the example</p>
 </div>
       
     </li>
   
 </ul>
+
+</div>
+
 
   <p class="tag_title">See Also:</p>
   <ul class="see">
@@ -1256,11 +1440,11 @@ returned.</p>
       <pre class="lines">
 
 
-121
-122</pre>
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'example.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'example.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
 <span class='kw'>end</span></pre>
@@ -1274,7 +1458,7 @@ returned.</p>
 </div>
 
     <div id="footer">
-  Generated on Sun Feb  9 16:57:37 2014 by
+  Generated on Sun Feb  9 16:59:56 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.3 (ruby-2.0.0).
 </div>
